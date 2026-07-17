@@ -1,0 +1,37 @@
+# Archivos del sistema
+desktop.ini
+Thumbs.db
+
+#Instrucciones copilot
+.github/
+
+# Entornos
+.env
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Datos pesados
+*.db
+*.sqlite
+*.duckdb
+
+#Datos de python
+*.pkl
+
+#Data
+data/intermediate/
+
+# Docs
+docs/
+
+# Archivos de log
+*.log
+
+# Configuración de IDE
+.vscode/
+.idea/
