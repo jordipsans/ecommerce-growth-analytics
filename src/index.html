@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Recommendation Engine</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #f5f7fa;
+            color: #1f2937;
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 60px 25px;
+        }
+
+        .header {
+            margin-bottom: 35px;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 6px 10px;
+            margin-bottom: 15px;
+            border-radius: 20px;
+            background: #e8eef7;
+            color: #315a89;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        h1 {
+            margin: 0 0 12px;
+            font-size: 34px;
+        }
+
+        .subtitle {
+            max-width: 700px;
+            color: #6b7280;
+            line-height: 1.6;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 28px;
+            margin-bottom: 25px;
+            box-shadow:
+                0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            margin-top: 30px;
+            font-size: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        input {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #d1d5db;
+            border-radius: 7px;
+            font-size: 15px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #315a89;
+        }
+
+        button {
+            margin-top: 12px;
+            padding: 13px 20px;
+            border: none;
+            border-radius: 7px;
+            background: #315a89;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #284b72;
+        }
+
+        .hint {
+            margin-top: 10px;
+            color: #9ca3af;
+            font-size: 12px;
+        }
+
+        .input-summary {
+            padding: 14px;
+            margin-bottom: 20px;
+            border-radius: 7px;
+            background: #f3f4f6;
+            font-size: 14px;
+        }
+
+        .warning {
+            padding: 14px;
+            margin-top: 15px;
+            border-radius: 7px;
+            background: #fff7ed;
+            color: #9a3412;
+            font-size: 14px;
+        }
+
+        .recommendations {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(170px, 1fr));
+            gap: 15px;
+        }
+
+        .product-card {
+            padding: 20px;
+            border: 1px solid #e5e7eb;
+            border-radius: 9px;
+            background: white;
+        }
+
+        .rank {
+            margin-bottom: 12px;
+            color: #9ca3af;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .product-id {
+            font-size: 21px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .distance {
+            color: #6b7280;
+            font-size: 13px;
+        }
+
+        .methodology {
+            color: #6b7280;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 600px) {
+
+            .container {
+                padding: 35px 15px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+
+        <div class="header">
+
+            <div class="tag">
+                RECOMMENDATION ENGINE · DEMO
+            </div>
+
+            <h1>
+                Product Recommendation Engine
+            </h1>
+
+            <p class="subtitle">
+                Item-item collaborative filtering using
+                user-product interaction patterns and
+                Euclidean distance.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <form method="GET">
+
+                <label for="products">
+                    Products currently viewed
+                </label>
+
+                <input id="products" name="products" type="text" placeholder="5897274, 5912306, 5860250">
+
+                <div class="hint">
+                    Enter one or more product IDs separated by commas.
+                </div>
+
+                <button type="submit">
+                    Get recommendations
+                </button>
+
+            </form>
+
+        </div>
+
+
+        {{RESULTS}}
+
+
+        <div class="card">
+
+            <div class="methodology">
+
+                <strong>How it works</strong>
+
+                <br><br>
+
+                The recommendation engine uses an
+                item-item distance matrix calculated from
+                user-product interactions.
+
+                <br><br>
+
+                For multiple input products, the average
+                distance between each candidate product
+                and the selected products is calculated.
+                Products with the lowest distance are
+                returned as recommendations.
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
