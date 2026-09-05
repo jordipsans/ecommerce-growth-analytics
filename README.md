@@ -113,7 +113,7 @@ However, among analytical sessions containing at least **one product view**:
 
 The analytical session definition splits sessions when periods of inactivity exceed **60 minutes**, reducing distortion from unusually long sessions while preserving the underlying events and purchases.
 
-![Session Based Conversion Funnel](../reports/graphics/session_based_conversion_funnel.png)
+![Session Based Conversion Funnel](reports/graphics/session_based_conversion_funnel.png)
 *Session-based conversion funnel from product interaction to purchase.*
 
 ### Insight 2: December Shows a Declining Purchasing Trend, While Sales Concentrate Around Major Commercial Events
@@ -128,7 +128,7 @@ The most relevant periods identified are:
 * ***Russian Cyber Monday (27–29 January)**.
 * *The days immediately preceding **Singles' Day (11 November)**.
 
-![Purchases and Views During High Sales Periods](../reports/graphics/purchases_views_on_high_sales_period.png)
+![Purchases and Views During High Sales Periods](reports/graphics/purchases_views_on_high_sales_period.png)
 *Purchase and view events during the main high-sales periods.*
 
 This indicates that commercial events have a meaningful relationship with purchasing activity and should be considered when allocating marketing effort.
@@ -198,7 +198,7 @@ An RFM segmentation was implemented using recency, purchase frequency and custom
 
 These segments represent a substantial proportion of the customer base and therefore provide significant opportunities for customer development and reactivation.
 
-![RFM Customer vs Revenue Share](../reports/graphics/rfm_customer_vs_revenue_share.png)
+![RFM Customer vs Revenue Share](reports/graphics/rfm_customer_vs_revenue_share.png)
 
 *Customer distribution and historical revenue contribution by RFM segment.*
 
@@ -206,7 +206,7 @@ These segments represent a substantial proportion of the customer base and there
 
 The **At Risk segment represents only 1.1% of customers but generates 5.3% of revenue**, corresponding to a **4.68× value index**.
 
-![RFM Value Index](../reports/graphics/rfm_value_index.png)
+![RFM Value Index](reports/graphics/rfm_value_index.png)
 
 *Relative economic value of each RFM customer segment.*
 
@@ -238,7 +238,7 @@ Product-level analysis identifies several relevant profiles:
 
 Product **5809910** has a significantly higher engagement rate than the rest of the analyzed catalog while also ranking highly in revenue and popularity.
 
-![Product Engagement vs Purchase Rate](../reports/graphics/product_engagement_vs_purchase_rate.png)
+![Product Engagement vs Purchase Rate](reports/graphics/product_engagement_vs_purchase_rate.png)
 
 *Relationship between product engagement and PR.*
 
@@ -251,12 +251,12 @@ Product performance changes significantly around major commercial events.
 * During **Black Friday**, products **89343, 5560754 and 5560756** show the strongest combination of revenue and lift.
 * During **Cyber Monday**, the leading products differ, with **5877506, 5906217, 89343, 5588154 and 5768981** showing the strongest performance.
 
-![Black Friday vs Cyber Monday](../reports/graphics/black_friday_vs_cyber_monday_dumbbell.png)
+![Black Friday vs Cyber Monday](reports/graphics/black_friday_vs_cyber_monday_dumbbell.png)
 *Comparison of product performance during Black Friday and Cyber Monday.*
 
 The analysis also identifies products with relatively stable revenue throughout the observation period, providing a more consistent revenue base outside major promotional events.
 
-![Top 50 Product Revenue Stability](../reports/graphics/top_50_product_revenue_stability_heatmap.png)
+![Top 50 Product Revenue Stability](reports/graphics/top_50_product_revenue_stability_heatmap.png)
 *Revenue stability across the observation period for the top 50 products.*
 
 Several products also display strong performance concentrated in specific periods, including:
@@ -275,7 +275,7 @@ These results indicate that product performance should be evaluated in its tempo
 
 Category-level analysis reveals substantial differences in engagement, revenue and PR.
 
-![Category Engagement vs Purchase Rate](../reports/graphics/category_engagement_vs_purchase_rate.png)
+![Category Engagement vs Purchase Rate](reports/graphics/category_engagement_vs_purchase_rate.png)
 *Engagement and PR across product categories.*
 
 * Category **1487580005092295511** is the most engaged category, with approximately **24,592 engaged sessions**, and generates the highest total revenue at **40,547.66**.
